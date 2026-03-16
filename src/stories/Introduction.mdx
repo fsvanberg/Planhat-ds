@@ -1,0 +1,105 @@
+import { Meta } from '@storybook/addon-docs/blocks'
+
+<Meta title="Introduction" />
+
+# Planhat Design System
+
+A component library built on [shadcn/ui](https://ui.shadcn.com), [Base UI](https://base-ui.com), and [Tailwind CSS v4](https://tailwindcss.com). All components are copy-owned source — no runtime dependency on a third-party design system package.
+
+---
+
+## Foundations
+
+Before using components, start with the token layer. Every colour, radius, and type decision traces back to a CSS custom property in `src/index.css`.
+
+<table style={{ width: '100%', borderCollapse: 'collapse', marginBottom: '1rem' }}>
+  <tbody>
+    <tr style={{ borderBottom: '1px solid var(--border)' }}>
+      <td style={{ padding: '0.75rem 1rem', fontWeight: 500, whiteSpace: 'nowrap', width: '180px' }}>
+        [Colors →](?path=/docs/foundations-colors--docs)
+      </td>
+      <td style={{ padding: '0.75rem 1rem', color: 'var(--muted-foreground)' }}>
+        Semantic tokens, neutral scale, chart palette
+      </td>
+    </tr>
+    <tr style={{ borderBottom: '1px solid var(--border)' }}>
+      <td style={{ padding: '0.75rem 1rem', fontWeight: 500, whiteSpace: 'nowrap' }}>
+        [Typography →](?path=/docs/foundations-typography--docs)
+      </td>
+      <td style={{ padding: '0.75rem 1rem', color: 'var(--muted-foreground)' }}>
+        Type scale, font weights, Inter Variable
+      </td>
+    </tr>
+    <tr>
+      <td style={{ padding: '0.75rem 1rem', fontWeight: 500, whiteSpace: 'nowrap' }}>
+        [Radius & Spacing →](?path=/docs/foundations-radius-spacing--docs)
+      </td>
+      <td style={{ padding: '0.75rem 1rem', color: 'var(--muted-foreground)' }}>
+        Border radius scale, Tailwind spacing
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+Toggle **Light / Dark** in the toolbar above to preview all tokens and components in both themes.
+
+---
+
+## Components
+
+30 components across 6 categories, tightly aligned with the Planhat Figma library.
+
+<table style={{ width: '100%', borderCollapse: 'collapse', marginBottom: '1rem' }}>
+  <thead>
+    <tr style={{ borderBottom: '1px solid var(--border)' }}>
+      <th style={{ padding: '0.5rem 1rem', textAlign: 'left', fontWeight: 600, width: '130px', fontSize: '0.8125rem' }}>Category</th>
+      <th style={{ padding: '0.5rem 1rem', textAlign: 'left', fontWeight: 600, fontSize: '0.8125rem' }}>Components</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr style={{ borderBottom: '1px solid var(--border)' }}>
+      <td style={{ padding: '0.75rem 1rem', fontWeight: 500, verticalAlign: 'top' }}>Inputs</td>
+      <td style={{ padding: '0.75rem 1rem', color: 'var(--muted-foreground)', lineHeight: 1.6 }}>Button, Checkbox, Input, Select, Slider, Switch, Textarea, Toggle, Toggle Group</td>
+    </tr>
+    <tr style={{ borderBottom: '1px solid var(--border)' }}>
+      <td style={{ padding: '0.75rem 1rem', fontWeight: 500, verticalAlign: 'top' }}>Display</td>
+      <td style={{ padding: '0.75rem 1rem', color: 'var(--muted-foreground)', lineHeight: 1.6 }}>Alert, Avatar, Badge, Card, Kbd, Progress, Skeleton, Spinner</td>
+    </tr>
+    <tr style={{ borderBottom: '1px solid var(--border)' }}>
+      <td style={{ padding: '0.75rem 1rem', fontWeight: 500, verticalAlign: 'top' }}>Navigation</td>
+      <td style={{ padding: '0.75rem 1rem', color: 'var(--muted-foreground)', lineHeight: 1.6 }}>Breadcrumb, Tabs</td>
+    </tr>
+    <tr style={{ borderBottom: '1px solid var(--border)' }}>
+      <td style={{ padding: '0.75rem 1rem', fontWeight: 500, verticalAlign: 'top' }}>Overlays</td>
+      <td style={{ padding: '0.75rem 1rem', color: 'var(--muted-foreground)', lineHeight: 1.6 }}>Alert Dialog, Drawer, Hover Card, Sheet, Tooltip</td>
+    </tr>
+    <tr style={{ borderBottom: '1px solid var(--border)' }}>
+      <td style={{ padding: '0.75rem 1rem', fontWeight: 500, verticalAlign: 'top' }}>Layout</td>
+      <td style={{ padding: '0.75rem 1rem', color: 'var(--muted-foreground)', lineHeight: 1.6 }}>Accordion, Carousel, Collapsible, Separator</td>
+    </tr>
+    <tr style={{ borderBottom: '1px solid var(--border)' }}>
+      <td style={{ padding: '0.75rem 1rem', fontWeight: 500, verticalAlign: 'top' }}>Feedback</td>
+      <td style={{ padding: '0.75rem 1rem', color: 'var(--muted-foreground)', lineHeight: 1.6 }}>Command, Sonner</td>
+    </tr>
+  </tbody>
+</table>
+
+---
+
+## Usage
+
+All components are imported directly from `@/components/ui`:
+
+```tsx
+import { Button } from '@/components/ui/button'
+import { Badge } from '@/components/ui/badge'
+import { AlertDialog, AlertDialogTrigger, AlertDialogContent } from '@/components/ui/alert-dialog'
+```
+
+Styles live in `src/index.css`. Tokens are CSS custom properties — override `--radius`, `--primary`, etc. to theme the entire system.
+
+---
+
+## Figma
+
+Components are linked to the Planhat Figma library via [Code Connect](https://www.figma.com/developers/api#code-connect). Select any component in Figma Dev Mode to see the matching code snippet and a link to this Storybook.

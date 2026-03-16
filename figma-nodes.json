@@ -1,0 +1,779 @@
+[
+  {
+    "nodeId": "21119:34264",
+    "name": "Accordion",
+    "localFile": "src/components/ui/accordion.tsx",
+    "componentName": "Accordion",
+    "variants": [
+      {
+        "name": "Variant",
+        "values": [
+          "Basic",
+          "Border"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": "26:160",
+    "name": "Alert",
+    "localFile": "src/components/ui/alert.tsx",
+    "componentName": "Alert",
+    "variants": [
+      {
+        "name": "Variant",
+        "values": [
+          "Default",
+          "Destructive"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": "83:122",
+    "name": "Alert Dialog",
+    "localFile": "src/components/ui/alert-dialog.tsx",
+    "componentName": "AlertDialog",
+    "variants": [
+      {
+        "name": "Size",
+        "values": [
+          "default",
+          "sm"
+        ]
+      },
+      {
+        "name": "Destructive",
+        "values": [
+          "No",
+          "Yes"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": "17100:29935",
+    "name": "Avatar",
+    "localFile": "src/components/ui/avatar.tsx",
+    "componentName": "Avatar",
+    "variants": [
+      {
+        "name": "Type",
+        "values": [
+          "Image",
+          "Fallback",
+          "Icon"
+        ]
+      },
+      {
+        "name": "Size",
+        "values": [
+          "xl",
+          "lg",
+          "default",
+          "sm",
+          "xs"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": "26:169",
+    "name": "Badge",
+    "localFile": "src/components/ui/badge.tsx",
+    "componentName": "Badge",
+    "variants": [
+      {
+        "name": "Variant",
+        "values": [
+          "Default",
+          "Secondary",
+          "Outline",
+          "Ghost",
+          "Destructive",
+          "Verified"
+        ]
+      },
+      {
+        "name": "State",
+        "values": [
+          "Default",
+          "Hover",
+          "Focus"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": "109:947",
+    "name": "Breadcrumb",
+    "localFile": "src/components/ui/breadcrumb.tsx",
+    "componentName": "Breadcrumb",
+    "variants": [
+      {
+        "name": "Size",
+        "values": [
+          "md",
+          "sm"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": "37:931",
+    "name": "Button",
+    "localFile": "src/components/ui/button.tsx",
+    "componentName": "Button",
+    "variants": [
+      {
+        "name": "Variant",
+        "values": [
+          "Default",
+          "Secondary",
+          "Destructive",
+          "Outline",
+          "Ghost",
+          "Link"
+        ]
+      },
+      {
+        "name": "State",
+        "values": [
+          "Default",
+          "Hover",
+          "Focus",
+          "Loading",
+          "Disabled",
+          "Pressed"
+        ]
+      },
+      {
+        "name": "Size",
+        "values": [
+          "default",
+          "sm",
+          "lg",
+          "icon",
+          "icon-sm",
+          "icon-xs",
+          "icon-lg",
+          "xs"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": "18672:224279",
+    "name": "ButtonGroup",
+    "localFile": "src/components/ui/button-group.tsx",
+    "componentName": "ButtonGroup",
+    "variants": [
+      {
+        "name": "Orientation",
+        "values": [
+          "Horizontal",
+          "Vertical"
+        ]
+      },
+      {
+        "name": "Variant",
+        "values": [
+          "Outline",
+          "Default",
+          "Secondary"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": "21123:292666",
+    "name": "Card",
+    "localFile": "src/components/ui/card.tsx",
+    "componentName": "Card",
+    "variants": [
+      {
+        "name": "Size",
+        "values": [
+          "default",
+          "sm"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": "241:1368",
+    "name": "Carousel",
+    "localFile": "src/components/ui/carousel.tsx",
+    "componentName": "Carousel",
+    "variants": [
+      {
+        "name": "Orientation",
+        "values": [
+          "Horizontal",
+          "Vertical"
+        ]
+      },
+      {
+        "name": "Breakpoint",
+        "values": [
+          "sm",
+          "md",
+          "lg"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": "46:112",
+    "name": "Checkbox",
+    "localFile": "src/components/ui/checkbox.tsx",
+    "componentName": "Checkbox",
+    "variants": [
+      {
+        "name": "Checked",
+        "values": [
+          "Yes",
+          "No"
+        ]
+      },
+      {
+        "name": "State",
+        "values": [
+          "Default",
+          "Invalid",
+          "Focus",
+          "Disabled",
+          "Pressed"
+        ]
+      },
+      {
+        "name": "Type",
+        "values": [
+          "Default",
+          "Box"
+        ]
+      },
+      {
+        "name": "Control Placement",
+        "values": [
+          "Start",
+          "End"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": "18597:96515",
+    "name": "Collapsible",
+    "localFile": "src/components/ui/collapsible.tsx",
+    "componentName": "Collapsible",
+    "variants": [
+      {
+        "name": "State",
+        "values": [
+          "Inactive",
+          "Active"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": "204:1144",
+    "name": "Command",
+    "localFile": "src/components/ui/command.tsx",
+    "componentName": "Command",
+    "variants": [
+      {
+        "name": "Variant",
+        "values": [
+          "Suggestions",
+          "Empty"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": "21473:105823",
+    "name": "ContextMenu",
+    "localFile": "src/components/ui/context-menu.tsx",
+    "componentName": "ContextMenu",
+    "variants": []
+  },
+  {
+    "nodeId": "244:2831",
+    "name": "Drawer",
+    "localFile": "src/components/ui/drawer.tsx",
+    "componentName": "Drawer",
+    "variants": [
+      {
+        "name": "Direction",
+        "values": [
+          "bottom",
+          "top",
+          "right",
+          "left"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": "216:3141",
+    "name": "Hover Card",
+    "localFile": "src/components/ui/hover-card.tsx",
+    "componentName": "HoverCard",
+    "variants": [
+      {
+        "name": "Active",
+        "values": [
+          "No",
+          "Yes"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": "65:533",
+    "name": "Input",
+    "localFile": "src/components/ui/input.tsx",
+    "componentName": "Input",
+    "variants": [
+      {
+        "name": "Variant",
+        "values": [
+          "Default",
+          "Password",
+          "File"
+        ]
+      },
+      {
+        "name": "State",
+        "values": [
+          "Default",
+          "Focus",
+          "Disabled",
+          "Filled",
+          "Invalid"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": "81:141",
+    "name": "InputOTP",
+    "localFile": "src/components/ui/input-otp.tsx",
+    "componentName": "InputOtp",
+    "variants": [
+      {
+        "name": "Variant",
+        "values": [
+          "Digits Only",
+          "With Spacing",
+          "Simple",
+          "With Separator"
+        ]
+      },
+      {
+        "name": "State",
+        "values": [
+          "Default",
+          "Invalid"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": "18672:226415",
+    "name": "InputGroup",
+    "localFile": "src/components/ui/input-group.tsx",
+    "componentName": "InputGroup",
+    "variants": [
+      {
+        "name": "Type",
+        "values": [
+          "Input",
+          "Textarea"
+        ]
+      },
+      {
+        "name": "State",
+        "values": [
+          "Default",
+          "Disabled",
+          "Invalid",
+          "Filled",
+          "Focus"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": "296:4740",
+    "name": "Progress",
+    "localFile": "src/components/ui/progress.tsx",
+    "componentName": "Progress",
+    "variants": [
+      {
+        "name": "Percent",
+        "values": [
+          "100%",
+          "75%",
+          "50%",
+          "25%",
+          "0%"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": "65:326",
+    "name": "RadioButton",
+    "localFile": "src/components/ui/radio-group.tsx",
+    "componentName": "RadioGroup",
+    "variants": [
+      {
+        "name": "Active",
+        "values": [
+          "Off",
+          "On"
+        ]
+      },
+      {
+        "name": "State",
+        "values": [
+          "Default",
+          "Invalid",
+          "Disabled",
+          "Focus"
+        ]
+      },
+      {
+        "name": "Type",
+        "values": [
+          "Default",
+          "Box"
+        ]
+      },
+      {
+        "name": "Control Placement",
+        "values": [
+          "Start",
+          "End"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": "345:11530",
+    "name": "Select",
+    "localFile": "src/components/ui/select.tsx",
+    "componentName": "Select",
+    "variants": [
+      {
+        "name": "State",
+        "values": [
+          "Default",
+          "Filled",
+          "Filled (Focus)",
+          "Focus",
+          "Invalid",
+          "Disabled"
+        ]
+      },
+      {
+        "name": "Size",
+        "values": [
+          "default",
+          "sm"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": "118:2690",
+    "name": "Separator",
+    "localFile": "src/components/ui/separator.tsx",
+    "componentName": "Separator",
+    "variants": [
+      {
+        "name": "Orientation",
+        "values": [
+          "Horizontal",
+          "Vertical"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": "220:4633",
+    "name": "Sheet",
+    "localFile": "src/components/ui/sheet.tsx",
+    "componentName": "Sheet",
+    "variants": [
+      {
+        "name": "Position",
+        "values": [
+          "right",
+          "top",
+          "bottom",
+          "left"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": "295:462",
+    "name": "Skeleton",
+    "localFile": "src/components/ui/skeleton.tsx",
+    "componentName": "Skeleton",
+    "variants": [
+      {
+        "name": "Variant",
+        "values": [
+          "Default",
+          "Card",
+          "Text",
+          "Table",
+          "Form"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": "17382:13106",
+    "name": "Slider",
+    "localFile": "src/components/ui/slider.tsx",
+    "componentName": "Slider",
+    "variants": [
+      {
+        "name": "Range",
+        "values": [
+          "No",
+          "Yes"
+        ]
+      },
+      {
+        "name": "State",
+        "values": [
+          "Default",
+          "Disabled"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": "60:450",
+    "name": "Switch",
+    "localFile": "src/components/ui/switch.tsx",
+    "componentName": "Switch",
+    "variants": [
+      {
+        "name": "Size",
+        "values": [
+          "default",
+          "sm"
+        ]
+      },
+      {
+        "name": "Active",
+        "values": [
+          "Off",
+          "On"
+        ]
+      },
+      {
+        "name": "State",
+        "values": [
+          "Default",
+          "Disabled",
+          "Focus",
+          "Invalid"
+        ]
+      },
+      {
+        "name": "Type",
+        "values": [
+          "Default",
+          "Box"
+        ]
+      },
+      {
+        "name": "Control Placement",
+        "values": [
+          "Start",
+          "End"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": "21133:27311",
+    "name": "Tabs",
+    "localFile": "src/components/ui/tabs.tsx",
+    "componentName": "Tabs",
+    "variants": [
+      {
+        "name": "Variant",
+        "values": [
+          "Default",
+          "Line"
+        ]
+      },
+      {
+        "name": "Orientation",
+        "values": [
+          "Default",
+          "Vertical"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": "183:74",
+    "name": "Textarea",
+    "localFile": "src/components/ui/textarea.tsx",
+    "componentName": "Textarea",
+    "variants": [
+      {
+        "name": "State",
+        "values": [
+          "Default",
+          "Error",
+          "Error (Focus)",
+          "Focus",
+          "Filled",
+          "Disabled"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": "124:27",
+    "name": "Toggle",
+    "localFile": "src/components/ui/toggle.tsx",
+    "componentName": "Toggle",
+    "variants": [
+      {
+        "name": "Variant",
+        "values": [
+          "Default",
+          "Outline"
+        ]
+      },
+      {
+        "name": "Size",
+        "values": [
+          "Default",
+          "sm",
+          "lg"
+        ]
+      },
+      {
+        "name": "State",
+        "values": [
+          "Default",
+          "Focus",
+          "Hover",
+          "Pressed",
+          "Disabled"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": "18707:214048",
+    "name": "Toggle Group",
+    "localFile": "src/components/ui/toggle-group.tsx",
+    "componentName": "ToggleGroup",
+    "variants": [
+      {
+        "name": "Type",
+        "values": [
+          "Default",
+          "With Spacing",
+          "Fill"
+        ]
+      },
+      {
+        "name": "Orientation",
+        "values": [
+          "Horizontal",
+          "Vertical"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": "17103:809",
+    "name": "Tooltip",
+    "localFile": "src/components/ui/tooltip.tsx",
+    "componentName": "Tooltip",
+    "variants": [
+      {
+        "name": "Side",
+        "values": [
+          "Top",
+          "Bottom",
+          "Left",
+          "Right"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": "18665:781",
+    "name": "Kbd",
+    "localFile": "src/components/ui/kbd.tsx",
+    "componentName": "Kbd",
+    "variants": [
+      {
+        "name": "Background",
+        "values": [
+          "Default",
+          "Primary"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": "18665:25956",
+    "name": "Spinner",
+    "localFile": "src/components/ui/spinner.tsx",
+    "componentName": "Spinner",
+    "variants": [
+      {
+        "name": "Size",
+        "values": [
+          "6",
+          "8",
+          "5",
+          "4",
+          "3"
+        ]
+      },
+      {
+        "name": "Spin Degree (for animation)",
+        "values": [
+          "0",
+          "90",
+          "180",
+          "270"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": "18482:48401",
+    "name": "Sonner",
+    "localFile": "src/components/ui/sonner.tsx",
+    "componentName": "Sonner",
+    "variants": [
+      {
+        "name": "State",
+        "values": [
+          "Default",
+          "Focus"
+        ]
+      }
+    ]
+  }
+]

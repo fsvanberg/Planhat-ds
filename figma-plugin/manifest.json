@@ -1,0 +1,7 @@
+{
+  "name": "Planhat Lab — Design System Updater",
+  "id": "planhat-lab-ds-updater",
+  "api": "1.0.0",
+  "main": "code.js",
+  "editorType": ["figma"]
+}

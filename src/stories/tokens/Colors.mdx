@@ -1,0 +1,198 @@
+import { Meta, ColorPalette, ColorItem } from '@storybook/addon-docs/blocks'
+
+<Meta title="Foundations/Colors" />
+
+# Colors
+
+All color tokens are CSS custom properties defined in `index.css`. The semantic layer maps to the
+**neutral scale** (foundation grays) plus a single **destructive** red. Toggle light/dark mode in
+the toolbar to preview both themes live.
+
+---
+
+## Semantic Tokens
+
+Semantic tokens adapt between light and dark. Each row shows the resolved value in both modes.
+
+### Surfaces
+
+<ColorPalette>
+  <ColorItem
+    title="Background"
+    subtitle="--background · Page / canvas background"
+    colors={{ Light: '#fafafa', Dark: '#0a0a0a' }}
+  />
+  <ColorItem
+    title="Card"
+    subtitle="--card / --card-foreground · Elevated card surface"
+    colors={{ 'Card Light': '#ffffff', 'Card Dark': '#171717', 'Card FG Light': '#0a0a0a', 'Card FG Dark': '#fafafa' }}
+  />
+  <ColorItem
+    title="Popover"
+    subtitle="--popover / --popover-foreground · Dropdown & tooltip surface"
+    colors={{ 'Popover Light': '#ffffff', 'Popover Dark': '#171717', 'Popover FG Light': '#0a0a0a', 'Popover FG Dark': '#fafafa' }}
+  />
+</ColorPalette>
+
+### Text
+
+<ColorPalette>
+  <ColorItem
+    title="Foreground"
+    subtitle="--foreground · Default body text"
+    colors={{ Light: '#0a0a0a', Dark: '#fafafa' }}
+  />
+  <ColorItem
+    title="Muted Foreground"
+    subtitle="--muted-foreground · De-emphasized / secondary text"
+    colors={{ Light: '#737373', Dark: '#a3a3a3' }}
+  />
+</ColorPalette>
+
+### Interactive
+
+<ColorPalette>
+  <ColorItem
+    title="Primary"
+    subtitle="--primary / --primary-foreground · Main CTAs and filled buttons"
+    colors={{ 'Primary Light': '#171717', 'Primary Dark': '#e5e5e5', 'FG Light': '#fafafa', 'FG Dark': '#171717' }}
+  />
+  <ColorItem
+    title="Secondary"
+    subtitle="--secondary / --secondary-foreground · Secondary actions"
+    colors={{ 'Secondary Light': '#f5f5f5', 'Secondary Dark': '#262626', 'FG Light': '#171717', 'FG Dark': '#fafafa' }}
+  />
+  <ColorItem
+    title="Muted"
+    subtitle="--muted / --muted-foreground · Subtle backgrounds for inputs, tabs"
+    colors={{ 'Muted Light': '#f5f5f5', 'Muted Dark': '#262626', 'FG Light': '#737373', 'FG Dark': '#a3a3a3' }}
+  />
+  <ColorItem
+    title="Accent"
+    subtitle="--accent / --accent-foreground · Hover & focus highlight"
+    colors={{ 'Accent Light': '#f5f5f5', 'Accent Dark': '#262626', 'FG Light': '#171717', 'FG Dark': '#fafafa' }}
+  />
+</ColorPalette>
+
+### Feedback
+
+<ColorPalette>
+  <ColorItem
+    title="Destructive"
+    subtitle="--destructive · Errors, deletes and danger states"
+    colors={{ Light: '#dc2626', Dark: '#f87171' }}
+  />
+</ColorPalette>
+
+### UI Chrome
+
+<ColorPalette>
+  <ColorItem
+    title="Border"
+    subtitle="--border · Default dividers and outlines"
+    colors={{ Light: '#e5e5e5', Dark: 'rgba(255,255,255,0.10)' }}
+  />
+  <ColorItem
+    title="Input"
+    subtitle="--input · Input field borders"
+    colors={{ Light: '#e5e5e5', Dark: 'rgba(255,255,255,0.15)' }}
+  />
+  <ColorItem
+    title="Ring"
+    subtitle="--ring · Focus rings"
+    colors={{ Light: '#a3a3a3', Dark: '#737373' }}
+  />
+</ColorPalette>
+
+---
+
+## Neutral Scale
+
+The primitive gray palette that underpins every semantic token. Based on the Tailwind **neutral**
+scale in oklch (chroma = 0).
+
+<ColorPalette>
+  <ColorItem
+    title="Neutral"
+    subtitle="50 → 950 · Foundation grays"
+    colors={{
+      '50':  '#fafafa',
+      '100': '#f5f5f5',
+      '200': '#e5e5e5',
+      '300': '#d4d4d4',
+      '400': '#a3a3a3',
+      '500': '#737373',
+      '600': '#525252',
+      '700': '#404040',
+      '800': '#262626',
+      '900': '#171717',
+      '950': '#0a0a0a',
+    }}
+  />
+</ColorPalette>
+
+### Semantic → Neutral mapping
+
+| Token | Light | Dark |
+|---|---|---|
+| `--background` | neutral-50 | neutral-950 |
+| `--foreground` | neutral-950 | neutral-50 |
+| `--card` | white | neutral-900 |
+| `--primary` | neutral-900 | neutral-200 |
+| `--secondary` | neutral-100 | neutral-800 |
+| `--muted` | neutral-100 | neutral-800 |
+| `--muted-foreground` | neutral-500 | neutral-400 |
+| `--accent` | neutral-100 | neutral-800 |
+| `--border` | neutral-200 | white/10% |
+| `--input` | neutral-200 | white/15% |
+| `--ring` | neutral-400 | neutral-500 |
+
+---
+
+## Data Visualization
+
+Chart colors form a custom blue ramp. Values are identical in light and dark mode.
+
+<ColorPalette>
+  <ColorItem
+    title="Chart"
+    subtitle="--chart-1 → --chart-5 · Sequential blue ramp for graphs and visualizations"
+    colors={{
+      'chart-1': 'oklch(0.809 0.105 251.813)',
+      'chart-2': 'oklch(0.623 0.214 259.815)',
+      'chart-3': 'oklch(0.546 0.245 262.881)',
+      'chart-4': 'oklch(0.488 0.243 264.376)',
+      'chart-5': 'oklch(0.424 0.199 265.638)',
+    }}
+  />
+</ColorPalette>
+
+---
+
+## Sidebar
+
+Sidebar tokens are mostly aliases of the core semantic tokens in light mode. In dark mode,
+`--sidebar-primary` shifts to the chart-4 blue to add brand presence to navigation.
+
+<ColorPalette>
+  <ColorItem
+    title="Sidebar Background"
+    subtitle="--sidebar / --sidebar-foreground"
+    colors={{ 'Surface Light': '#fafafa', 'Surface Dark': '#171717', 'FG Light': '#0a0a0a', 'FG Dark': '#fafafa' }}
+  />
+  <ColorItem
+    title="Sidebar Primary"
+    subtitle="--sidebar-primary / --sidebar-primary-foreground · Active nav items"
+    colors={{ 'Primary Light': '#171717', 'Primary Dark': 'oklch(0.488 0.243 264.376)', 'FG Light': '#fafafa', 'FG Dark': '#fafafa' }}
+  />
+  <ColorItem
+    title="Sidebar Accent"
+    subtitle="--sidebar-accent / --sidebar-accent-foreground · Hover states"
+    colors={{ 'Accent Light': '#f5f5f5', 'Accent Dark': '#262626', 'FG Light': '#171717', 'FG Dark': '#fafafa' }}
+  />
+  <ColorItem
+    title="Sidebar Chrome"
+    subtitle="--sidebar-border / --sidebar-ring"
+    colors={{ 'Border Light': '#e5e5e5', 'Border Dark': 'rgba(255,255,255,0.10)', 'Ring Light': '#a3a3a3', 'Ring Dark': '#737373' }}
+  />
+</ColorPalette>

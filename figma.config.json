@@ -1,0 +1,12 @@
+{
+  "codeConnect": {
+    "parser": "react",
+    "include": ["src/**/*.tsx"],
+    "paths": {
+      "@/*": ["src/*"]
+    },
+    "storybook": {
+      "url": "http://localhost:6006"
+    }
+  }
+}
