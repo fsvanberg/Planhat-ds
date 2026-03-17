@@ -406,9 +406,9 @@ export function Dashboard01() {
 
       <SidebarInset>
         {/* Top bar — header height 48px (h-12) */}
-        <header className="flex h-12 shrink-0 items-center gap-2 border-b px-4">
+        <header className="sticky top-0 z-10 flex h-12 shrink-0 items-center gap-2 border-b bg-background px-4">
           <SidebarTrigger className="-ml-1" />
-          <Separator orientation="vertical" className="h-4" />
+          <Separator orientation="vertical" className="mx-1 h-4 self-center" />
           <Breadcrumb>
             <BreadcrumbList>
               <BreadcrumbItem>
