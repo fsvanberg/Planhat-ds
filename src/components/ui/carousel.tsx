@@ -178,24 +178,31 @@ function CarouselPrevious({
   const { orientation, scrollPrev, canScrollPrev } = useCarousel()
 
   return (
-    <Button
+    <div
       data-slot="carousel-previous"
-      variant={variant}
-      size={size}
       className={cn(
-        "absolute touch-manipulation rounded-full",
+        "absolute",
         orientation === "horizontal"
           ? "top-1/2 -left-12 -translate-y-1/2"
-          : "-top-12 left-1/2 -translate-x-1/2 rotate-90",
-        className
+          : "-top-12 left-1/2 -translate-x-1/2"
       )}
-      disabled={!canScrollPrev}
-      onClick={scrollPrev}
-      {...props}
     >
-      <ChevronLeftIcon />
-      <span className="sr-only">Previous slide</span>
-    </Button>
+      <Button
+        variant={variant}
+        size={size}
+        className={cn(
+          "touch-manipulation rounded-full",
+          orientation === "vertical" && "rotate-90",
+          className
+        )}
+        disabled={!canScrollPrev}
+        onClick={scrollPrev}
+        {...props}
+      >
+        <ChevronLeftIcon />
+        <span className="sr-only">Previous slide</span>
+      </Button>
+    </div>
   )
 }
 
@@ -208,24 +215,31 @@ function CarouselNext({
   const { orientation, scrollNext, canScrollNext } = useCarousel()
 
   return (
-    <Button
+    <div
       data-slot="carousel-next"
-      variant={variant}
-      size={size}
       className={cn(
-        "absolute touch-manipulation rounded-full",
+        "absolute",
         orientation === "horizontal"
           ? "top-1/2 -right-12 -translate-y-1/2"
-          : "-bottom-12 left-1/2 -translate-x-1/2 rotate-90",
-        className
+          : "-bottom-12 left-1/2 -translate-x-1/2"
       )}
-      disabled={!canScrollNext}
-      onClick={scrollNext}
-      {...props}
     >
-      <ChevronRightIcon />
-      <span className="sr-only">Next slide</span>
-    </Button>
+      <Button
+        variant={variant}
+        size={size}
+        className={cn(
+          "touch-manipulation rounded-full",
+          orientation === "vertical" && "rotate-90",
+          className
+        )}
+        disabled={!canScrollNext}
+        onClick={scrollNext}
+        {...props}
+      >
+        <ChevronRightIcon />
+        <span className="sr-only">Next slide</span>
+      </Button>
+    </div>
   )
 }
 
