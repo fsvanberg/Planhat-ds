@@ -18,12 +18,8 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm run tokens:build
-      - name: Get commit title
-        id: meta
-        run: echo "title=$(git log -1 --format='%s')" >> $GITHUB_OUTPUT
       - name: Publish to Chromatic
         uses: chromaui/action@latest
         with:
           projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
           exitZeroOnChanges: true
-          buildName: ${{ steps.meta.outputs.title }}
