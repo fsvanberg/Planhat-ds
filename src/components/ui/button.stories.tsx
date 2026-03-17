@@ -10,7 +10,7 @@ const meta = {
     layout: 'centered',
     docs: {
       description: {
-        component: 'A clickable button built on Base UI. Use `variant` to communicate intent (default, secondary, destructive, outline, ghost, link) and `size` to match the surrounding context.',
+        component: 'A clickable button built on Base UI. Use `variant` to communicate intent and `size` to match the surrounding context. Pass `loading` to show a spinner and disable interaction.',
       },
     },
   },
@@ -66,8 +66,12 @@ export const Disabled: Story = {
   args: { disabled: true, children: 'Disabled' },
 }
 
-export const Invalid: Story = {
-  args: { 'aria-invalid': true, children: 'Invalid' },
+export const Loading: Story = {
+  args: { loading: true, children: 'Loading' },
+}
+
+export const LoadingIcon: Story = {
+  args: { loading: true, size: 'icon' },
 }
 
 export const Sizes: Story = {
