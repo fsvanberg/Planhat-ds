@@ -29,8 +29,8 @@ export function SignIn02() {
   return (
     <div className="min-h-screen lg:grid lg:grid-cols-2">
       {/* Left panel */}
-      <div className="flex flex-col justify-between bg-background px-6 py-24">
-        <div className="mx-auto flex w-full max-w-[384px] flex-col gap-6">
+      <div className="flex flex-col items-center justify-center bg-background px-6 py-24">
+        <div className="flex w-full max-w-[384px] flex-col gap-6">
           {/* Header */}
           <div className="flex flex-col gap-2 text-center">
             <h1 className="text-3xl font-semibold tracking-tight">Sign in</h1>
@@ -97,8 +97,7 @@ export function SignIn02() {
             </a>
           </p>
         </div>
-
-        </div>
+      </div>
 
       {/* Right panel */}
       <div className="hidden bg-muted lg:block" />
