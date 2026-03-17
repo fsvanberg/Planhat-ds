@@ -9,6 +9,7 @@ const meta = {
   tags: ['autodocs'],
   parameters: {
     layout: 'centered',
+    controls: { disable: true },
     docs: {
       description: {
         component: 'A component that reveals or hides additional content on demand. Use `CollapsibleTrigger` to attach a toggle control and `CollapsibleContent` to wrap the expandable region.',

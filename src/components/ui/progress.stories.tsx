@@ -13,6 +13,13 @@ const meta = {
       },
     },
   },
+  argTypes: {
+    value: {
+      control: { type: 'range', min: 0, max: 100, step: 1 },
+      description: 'Completion percentage (0–100)',
+    },
+    className: { table: { disable: true } },
+  },
   args: {
     value: 60,
     className: 'w-80',

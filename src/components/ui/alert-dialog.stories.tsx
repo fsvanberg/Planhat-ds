@@ -19,6 +19,7 @@ const meta = {
   tags: ['autodocs'],
   parameters: {
     layout: 'centered',
+    controls: { disable: true },
     docs: {
       description: {
         component: 'A modal alert dialog built on Base UI that requires explicit user acknowledgement before proceeding. Use it for destructive or irreversible actions where confirmation is mandatory.',

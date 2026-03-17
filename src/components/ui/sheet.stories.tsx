@@ -19,6 +19,7 @@ const meta = {
   tags: ['autodocs'],
   parameters: {
     layout: 'centered',
+    controls: { disable: true },
     docs: {
       description: {
         component: 'A panel that slides in from any edge of the screen, suitable for navigation drawers or detail views. Use `side` to control which edge it slides from; it renders as a full-height or full-width overlay.',

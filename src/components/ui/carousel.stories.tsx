@@ -14,6 +14,7 @@ const meta = {
   tags: ['autodocs'],
   parameters: {
     layout: 'centered',
+    controls: { disable: true },
     docs: {
       description: {
         component: 'A touch-friendly carousel built on Embla. Use `CarouselContent`, `CarouselItem`, `CarouselPrevious`, and `CarouselNext` to compose; pass `opts` for Embla configuration and set `basis-*` on items for multi-item views.',

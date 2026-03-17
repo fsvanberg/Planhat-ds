@@ -17,6 +17,7 @@ const meta = {
   tags: ['autodocs'],
   parameters: {
     layout: 'centered',
+    controls: { disable: true },
     docs: {
       description: {
         component: 'A slide-in panel built on Vaul that enters from any edge of the screen. Use `direction` to control which side it slides from; on mobile it renders as a bottom sheet with a drag handle.',

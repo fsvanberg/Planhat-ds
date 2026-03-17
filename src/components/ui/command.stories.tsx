@@ -17,6 +17,7 @@ const meta = {
   tags: ['autodocs'],
   parameters: {
     layout: 'centered',
+    controls: { disable: true },
     docs: {
       description: {
         component: 'A keyboard-driven command palette built on cmdk for fast search and navigation. Compose `CommandInput`, `CommandGroup`, and `CommandItem` inside a `CommandList`; embed in a `Dialog` for a global command menu.',

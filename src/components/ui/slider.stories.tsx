@@ -13,6 +13,35 @@ const meta = {
       },
     },
   },
+  argTypes: {
+    defaultValue: { table: { disable: true } },
+    value:        { table: { disable: true } },
+    onValueChange:{ table: { disable: true } },
+    min: {
+      control: { type: 'number' },
+      description: 'Minimum value',
+      defaultValue: 0,
+    },
+    max: {
+      control: { type: 'number' },
+      description: 'Maximum value',
+      defaultValue: 100,
+    },
+    step: {
+      control: { type: 'number', min: 1 },
+      description: 'Step increment',
+      defaultValue: 1,
+    },
+    orientation: {
+      control: 'select',
+      options: ['horizontal', 'vertical'],
+      description: 'Slider orientation',
+    },
+    disabled: {
+      control: 'boolean',
+      description: 'Disable the slider',
+    },
+  },
   args: {
     defaultValue: [50],
     max: 100,

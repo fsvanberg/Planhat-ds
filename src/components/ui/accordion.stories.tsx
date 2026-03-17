@@ -12,6 +12,7 @@ const meta = {
   tags: ['autodocs'],
   parameters: {
     layout: 'centered',
+    controls: { disable: true },
     docs: {
       description: {
         component: 'A vertically stacked set of collapsible panels built on Base UI. Use `variant` to switch between borderless (`basic`) and bordered (`border`) styles; supports single or multiple open panels via `openMultiple`.',

@@ -12,6 +12,7 @@ const meta = {
   tags: ['autodocs'],
   parameters: {
     layout: 'centered',
+    controls: { disable: true },
     docs: {
       description: {
         component: 'A tabbed navigation component built on Base UI for switching between related content panels. Supports `default` and `line` variants, horizontal and vertical orientations.',

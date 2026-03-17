@@ -9,6 +9,7 @@ const meta = {
   tags: ['autodocs'],
   parameters: {
     layout: 'centered',
+    controls: { disable: true },
     docs: {
       description: {
         component: 'A floating card that appears on hover for previewing supplementary information without navigating away. Use it for user profiles, link previews, or any context that enriches but does not block the main flow.',

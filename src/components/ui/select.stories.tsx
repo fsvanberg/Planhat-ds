@@ -17,6 +17,7 @@ const meta = {
   tags: ['autodocs'],
   parameters: {
     layout: 'centered',
+    controls: { disable: true },
     docs: {
       description: {
         component: 'A dropdown select built on Base UI for picking one option from a list. Use `SelectTrigger`, `SelectContent`, and `SelectItem` to compose; the trigger supports `disabled` and `aria-invalid` states.',
