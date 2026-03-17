@@ -408,7 +408,7 @@ export function Dashboard01() {
         {/* Top bar — header height 48px (h-12) */}
         <header className="sticky top-0 z-10 flex h-12 shrink-0 items-center gap-2 border-b bg-background px-4">
           <SidebarTrigger className="-ml-1" />
-          <Separator orientation="vertical" className="mx-1 h-4 self-center" />
+          <div className="mx-1 h-4 w-px shrink-0 self-center bg-border" />
           <Breadcrumb>
             <BreadcrumbList>
               <BreadcrumbItem>
