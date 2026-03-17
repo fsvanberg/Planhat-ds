@@ -1,6 +1,6 @@
 import { DocsContainer } from '@storybook/addon-docs/blocks'
 import { create } from 'storybook/theming/create'
-import { useState, useEffect } from 'react'
+import { useEffect } from 'react'
 import type { ComponentProps } from 'react'
 
 const font = '"Inter Variable", Inter, system-ui, sans-serif'
@@ -11,20 +11,12 @@ const docsDark  = create({ base: 'dark',  fontBase: font })
 type Props = ComponentProps<typeof DocsContainer>
 
 export function ThemedDocsContainer(props: Props) {
-  const [isDark, setIsDark] = useState(
-    () => document.documentElement.classList.contains('dark')
-  )
+  const isDark = (props.context?.globals?.['theme'] ?? 'light') === 'dark'
 
   useEffect(() => {
-    const observer = new MutationObserver(() => {
-      setIsDark(document.documentElement.classList.contains('dark'))
-    })
-    observer.observe(document.documentElement, {
-      attributes: true,
-      attributeFilter: ['class'],
-    })
-    return () => observer.disconnect()
-  }, [])
+    document.documentElement.classList.toggle('dark', isDark)
+    document.documentElement.style.colorScheme = isDark ? 'dark' : 'light'
+  }, [isDark])
 
   return <DocsContainer {...props} theme={isDark ? docsDark : docsLight} />
 }
