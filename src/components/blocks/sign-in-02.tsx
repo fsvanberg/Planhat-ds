@@ -25,17 +25,6 @@ function AppleIcon() {
   )
 }
 
-function AppLogo() {
-  return (
-    <div className="relative size-9 shrink-0">
-      <div className="size-full rounded-sm bg-foreground" />
-      <div className="absolute top-0 right-0 size-[30%] bg-background" />
-      <div className="absolute bottom-0 right-0 size-[30%] bg-background" />
-      <div className="absolute bottom-0 left-0 size-[30%] bg-background" />
-    </div>
-  )
-}
-
 export function SignIn02() {
   return (
     <div className="min-h-screen lg:grid lg:grid-cols-2">
@@ -109,9 +98,7 @@ export function SignIn02() {
           </p>
         </div>
 
-        {/* Logo */}
-        <AppLogo />
-      </div>
+        </div>
 
       {/* Right panel */}
       <div className="hidden bg-muted lg:block" />

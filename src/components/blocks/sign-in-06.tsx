@@ -26,16 +26,6 @@ function AppleIcon() {
   )
 }
 
-function AppLogo() {
-  return (
-    <div className="relative size-9 shrink-0">
-      <div className="size-full rounded-sm bg-foreground" />
-      <div className="absolute top-0 right-0 size-[30%] bg-background" />
-      <div className="absolute bottom-0 right-0 size-[30%] bg-background" />
-      <div className="absolute bottom-0 left-0 size-[30%] bg-background" />
-    </div>
-  )
-}
 
 function SocialButtons() {
   return (
@@ -66,15 +56,12 @@ export function SignIn06() {
   return (
     <div className="flex min-h-screen items-center justify-center bg-secondary p-4">
       <div className="flex w-full max-w-[400px] flex-col gap-6 rounded-xl bg-card p-6 shadow-sm">
-        {/* Logo + header */}
-        <div className="flex flex-col gap-4">
-          <AppLogo />
-          <div className="flex flex-col gap-1.5">
+        {/* Header */}
+        <div className="flex flex-col gap-1.5">
             <h1 className="text-3xl font-semibold tracking-tight">Get started</h1>
             <p className="text-sm text-muted-foreground">
               Log in to unlock tailored content and stay connected with your community.
             </p>
-          </div>
         </div>
 
         {/* Tabs */}
