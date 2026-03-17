@@ -53,6 +53,24 @@ export const Default: Story = {
   ),
 }
 
+export const WithActions: Story = {
+  render: (args) => (
+    <Card {...args} className="w-80">
+      <CardHeader>
+        <CardTitle>Delete account</CardTitle>
+        <CardDescription>This action cannot be undone.</CardDescription>
+      </CardHeader>
+      <CardContent>
+        <p>All your data will be permanently removed.</p>
+      </CardContent>
+      <CardFooter>
+        <Button variant="outline" className="w-full">Cancel</Button>
+        <Button variant="destructive" className="w-full">Delete</Button>
+      </CardFooter>
+    </Card>
+  ),
+}
+
 export const Small: Story = {
   args: { size: 'sm' },
   render: (args) => (
