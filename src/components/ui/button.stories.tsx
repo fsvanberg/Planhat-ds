@@ -21,7 +21,7 @@ const meta = {
     },
     size: {
       control: 'select',
-      options: ['default', 'sm', 'lg', 'xs', 'icon', 'icon-sm', 'icon-xs', 'icon-lg'],
+      options: ['default', 'sm', 'xs', '2xs', 'icon', 'icon-sm', 'icon-xs', 'icon-2xs'],
     },
   },
   args: {
@@ -73,10 +73,10 @@ export const Invalid: Story = {
 export const Sizes: Story = {
   render: () => (
     <div className="flex items-center gap-2">
-      <Button size="xs">XSmall</Button>
-      <Button size="sm">Small</Button>
-      <Button size="default">Default</Button>
-      <Button size="lg">Large</Button>
+      <Button size="2xs">XSmall</Button>
+      <Button size="xs">Small</Button>
+      <Button size="sm">Default</Button>
+      <Button size="default">Large</Button>
     </div>
   ),
 }
@@ -84,10 +84,10 @@ export const Sizes: Story = {
 export const IconSizes: Story = {
   render: () => (
     <div className="flex items-center gap-2">
+      <Button size="icon-2xs" aria-label="icon-2xs">+</Button>
       <Button size="icon-xs" aria-label="icon-xs">+</Button>
       <Button size="icon-sm" aria-label="icon-sm">+</Button>
       <Button size="icon" aria-label="icon">+</Button>
-      <Button size="icon-lg" aria-label="icon-lg">+</Button>
     </div>
   ),
 }

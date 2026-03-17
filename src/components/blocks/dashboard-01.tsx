@@ -253,7 +253,7 @@ function SortableRow({ row }: { row: TableRowData }) {
           <span className="text-sm">{row.reviewer}</span>
         ) : (
           // Figma sm = our default (28px)
-          <Button variant="ghost" size="default" className="gap-1 text-muted-foreground px-2">
+          <Button variant="ghost" size="sm" className="gap-1 text-muted-foreground px-2">
             Assign reviewer
             <ChevronDownIcon className="size-3.5" />
           </Button>
@@ -261,7 +261,7 @@ function SortableRow({ row }: { row: TableRowData }) {
       </TableCell>
       {/* Row action — Figma icon-sm = our size="icon" (28×28) */}
       <TableCell className="w-8">
-        <Button variant="ghost" size="icon">
+        <Button variant="ghost" size="icon-sm">
           <MoreVerticalIcon className="size-4" />
         </Button>
       </TableCell>
@@ -286,12 +286,12 @@ function AppSidebar() {
       <SidebarContent>
         {/* Quick Create row — both buttons Figma default = our lg = 32px */}
         <div className="flex items-center gap-2 px-3 pt-3 pb-1">
-          <Button size="lg" className="flex-1 justify-start gap-2">
+          <Button size="default" className="flex-1 justify-start gap-2">
             <PlusCircleIcon className="size-4" />
             Quick Create
           </Button>
           {/* Mail — Figma icon (32×32) = our icon-lg */}
-          <Button variant="secondary" size="icon-lg" aria-label="Inbox">
+          <Button variant="secondary" size="icon" aria-label="Inbox">
             <MailIcon className="size-4" />
           </Button>
         </div>
@@ -423,17 +423,17 @@ export function Dashboard01() {
 
           <div className="ml-auto flex items-center gap-2">
             {/* GitHub — Figma default = our lg (32px) */}
-            <Button variant="ghost" size="lg" className="gap-2">
+            <Button variant="ghost" size="default" className="gap-2">
               <GithubIcon className="size-4" />
               GitHub
             </Button>
             {/* Theme selector — Figma default = our lg (32px) */}
-            <Button variant="outline" size="lg" className="gap-2">
+            <Button variant="outline" size="default" className="gap-2">
               Select a theme: Default
               <ChevronDownIcon className="size-4" />
             </Button>
             {/* Moon — Figma variant=secondary size=icon (32×32) = our secondary icon-lg */}
-            <Button variant="secondary" size="icon-lg" aria-label="Toggle dark mode">
+            <Button variant="secondary" size="icon" aria-label="Toggle dark mode">
               <MoonIcon className="size-4" />
             </Button>
           </div>
@@ -492,7 +492,7 @@ export function Dashboard01() {
                     <Button
                       key={p}
                       variant={period === p ? 'outline' : 'ghost'}
-                      size="default"
+                      size="sm"
                       onClick={() => setPeriod(p)}
                     >
                       {p === '3m' ? 'Last 3 months' : p === '30d' ? 'Last 30 days' : 'Last 7 days'}
@@ -548,11 +548,11 @@ export function Dashboard01() {
               </Tabs>
               {/* Toolbar buttons — Figma default = our lg (32px) */}
               <div className="flex items-center gap-2">
-                <Button variant="outline" size="lg" className="gap-2">
+                <Button variant="outline" size="default" className="gap-2">
                   <ColumnsIcon className="size-4" />
                   Customize Columns
                 </Button>
-                <Button size="lg" className="gap-2">
+                <Button size="default" className="gap-2">
                   <PlusIcon className="size-4" />
                   Add Section
                 </Button>
@@ -613,16 +613,16 @@ export function Dashboard01() {
                 <span className="whitespace-nowrap">Page 1 of 7</span>
                 {/* Pagination — Figma icon (32×32) = our icon-lg */}
                 <div className="flex items-center gap-1">
-                  <Button variant="outline" size="icon-lg" disabled>
+                  <Button variant="outline" size="icon" disabled>
                     <ChevronsLeftIcon className="size-4" />
                   </Button>
-                  <Button variant="outline" size="icon-lg" disabled>
+                  <Button variant="outline" size="icon" disabled>
                     <ChevronLeftIcon className="size-4" />
                   </Button>
-                  <Button variant="outline" size="icon-lg">
+                  <Button variant="outline" size="icon">
                     <ChevronRightIcon className="size-4" />
                   </Button>
-                  <Button variant="outline" size="icon-lg">
+                  <Button variant="outline" size="icon">
                     <ChevronsRightIcon className="size-4" />
                   </Button>
                 </div>

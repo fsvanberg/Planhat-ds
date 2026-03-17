@@ -56,7 +56,7 @@ export const WithSeparator: Story = {
     <ButtonGroup {...args}>
       <Button variant="outline">Save</Button>
       <ButtonGroupSeparator />
-      <Button variant="outline" size="icon" aria-label="More options">▾</Button>
+      <Button variant="outline" size="icon-sm" aria-label="More options">▾</Button>
     </ButtonGroup>
   ),
 }
@@ -73,9 +73,9 @@ export const WithText: Story = {
 export const IconGroup: Story = {
   render: (args) => (
     <ButtonGroup {...args}>
-      <Button variant="outline" size="icon" aria-label="Align left"><AlignLeftIcon /></Button>
-      <Button variant="outline" size="icon" aria-label="Align center"><AlignCenterIcon /></Button>
-      <Button variant="outline" size="icon" aria-label="Align right"><AlignRightIcon /></Button>
+      <Button variant="outline" size="icon-sm" aria-label="Align left"><AlignLeftIcon /></Button>
+      <Button variant="outline" size="icon-sm" aria-label="Align center"><AlignCenterIcon /></Button>
+      <Button variant="outline" size="icon-sm" aria-label="Align right"><AlignRightIcon /></Button>
     </ButtonGroup>
   ),
 }

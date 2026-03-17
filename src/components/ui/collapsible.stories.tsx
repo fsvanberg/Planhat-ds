@@ -29,7 +29,7 @@ export const Default: Story = {
           @peduarte starred 3 repositories
         </h4>
         <CollapsibleTrigger render={
-          <Button variant="ghost" size="icon-sm">
+          <Button variant="ghost" size="icon-xs">
             <ChevronsUpDownIcon className="size-4" />
             <span className="sr-only">Toggle</span>
           </Button>
