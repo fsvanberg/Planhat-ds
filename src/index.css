@@ -78,14 +78,14 @@
   --card-foreground: var(--color-neutral-950);
   --popover: var(--color-white);
   --popover-foreground: var(--color-neutral-950);
-  --primary: var(--color-orange-600);
+  --primary: var(--color-neutral-950);
   --primary-foreground: var(--color-white);
   --secondary: var(--color-neutral-100);
   --secondary-foreground: var(--color-neutral-900);
   --muted: var(--color-neutral-100);
   --muted-foreground: var(--color-neutral-500);
-  --accent: var(--color-orange-100);
-  --accent-foreground: var(--color-orange-900);
+  --accent: var(--color-neutral-100);
+  --accent-foreground: var(--color-neutral-900);
   --destructive: var(--color-red-600);
   --destructive-foreground: var(--color-white);
   --border: var(--color-neutral-200);
@@ -99,10 +99,10 @@
   --radius: 0.625rem;
   --sidebar: var(--color-neutral-50);
   --sidebar-foreground: var(--color-neutral-950);
-  --sidebar-primary: var(--color-orange-600);
+  --sidebar-primary: var(--color-neutral-950);
   --sidebar-primary-foreground: var(--color-white);
-  --sidebar-accent: var(--color-orange-100);
-  --sidebar-accent-foreground: var(--color-orange-900);
+  --sidebar-accent: var(--color-neutral-100);
+  --sidebar-accent-foreground: var(--color-neutral-900);
   --sidebar-border: var(--color-neutral-200);
   --sidebar-ring: var(--color-neutral-400);
 }
@@ -114,14 +114,14 @@
   --card-foreground: var(--color-neutral-50);
   --popover: oklch(0.269 0 0);
   --popover-foreground: var(--color-neutral-50);
-  --primary: var(--color-orange-500);
-  --primary-foreground: var(--color-white);
+  --primary: var(--color-neutral-50);
+  --primary-foreground: var(--color-neutral-950);
   --secondary: oklch(0.269 0 0);
   --secondary-foreground: var(--color-neutral-50);
   --muted: oklch(0.269 0 0);
   --muted-foreground: var(--color-neutral-400);
-  --accent: oklch(0.371 0.12 50);
-  --accent-foreground: var(--color-orange-50);
+  --accent: oklch(0.269 0 0);
+  --accent-foreground: var(--color-neutral-50);
   --destructive: oklch(0.711 0.166 22.2);
   --destructive-foreground: var(--color-neutral-50);
   --border: oklch(1 0 0 / 10%);
@@ -136,8 +136,8 @@
   --sidebar-foreground: var(--color-neutral-50);
   --sidebar-primary: oklch(0.488 0.243 264.376);
   --sidebar-primary-foreground: var(--color-neutral-50);
-  --sidebar-accent: oklch(0.371 0.12 50);
-  --sidebar-accent-foreground: var(--color-orange-50);
+  --sidebar-accent: oklch(0.269 0 0);
+  --sidebar-accent-foreground: var(--color-neutral-50);
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.439 0 0);
 }
