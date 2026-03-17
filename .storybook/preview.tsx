@@ -34,6 +34,11 @@ const preview: Preview = {
     },
   ],
   parameters: {
+    options: {
+      storySort: {
+        order: ['Foundations', 'Blocks', 'Components'],
+      },
+    },
     backgrounds: { disable: true },
     docs: {
       container: ThemedDocsContainer,
