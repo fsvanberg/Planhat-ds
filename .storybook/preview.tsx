@@ -30,6 +30,9 @@ const preview: Preview = {
       const theme = (context.globals['theme'] ?? 'light') as string
       document.documentElement.classList.toggle('dark', theme === 'dark')
       document.documentElement.style.colorScheme = theme
+      // Force the canvas background using inline style so it wins over any
+      // unlayered Storybook-injected CSS that would override our @layer base rules.
+      document.body.style.backgroundColor = theme === 'dark' ? '#0a0a0a' : '#fafafa'
       return <Story />
     },
   ],

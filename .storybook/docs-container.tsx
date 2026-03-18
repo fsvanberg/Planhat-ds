@@ -16,6 +16,7 @@ export function ThemedDocsContainer(props: Props) {
   useEffect(() => {
     document.documentElement.classList.toggle('dark', isDark)
     document.documentElement.style.colorScheme = isDark ? 'dark' : 'light'
+    document.body.style.backgroundColor = isDark ? '#0a0a0a' : '#fafafa'
   }, [isDark])
 
   return <DocsContainer {...props} theme={isDark ? docsDark : docsLight} />
