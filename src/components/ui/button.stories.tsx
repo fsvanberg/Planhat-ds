@@ -71,7 +71,7 @@ export const Loading: Story = {
 }
 
 export const LoadingIcon: Story = {
-  args: { loading: true, size: 'icon', 'aria-label': 'loading' },
+  args: { loading: true, size: 'icon', 'aria-label': 'loading', children: undefined },
 }
 
 export const Sizes: Story = {
