@@ -43,7 +43,7 @@ const meta = {
     },
   },
   args: {
-    defaultValue: [50],
+    defaultValue: 50,
     max: 100,
     step: 1,
     className: 'w-64',
@@ -65,7 +65,7 @@ export const Vertical: Story = {
   args: {
     orientation: 'vertical',
     className: 'h-40',
-    defaultValue: [50],
+    defaultValue: 50,
   },
 }
 
@@ -79,6 +79,6 @@ export const Stepped: Story = {
 export const Disabled: Story = {
   args: {
     disabled: true,
-    defaultValue: [50],
+    defaultValue: 50,
   },
 }

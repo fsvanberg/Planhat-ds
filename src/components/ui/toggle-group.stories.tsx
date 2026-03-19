@@ -10,7 +10,7 @@ const meta = {
     layout: 'centered',
     docs: {
       description: {
-        component: 'A group of toggle buttons built on Base UI, supporting single or multiple selection. Configure `type`, `variant`, `size`, `orientation`, and `spacing` to compose toolbar-style or pill-style controls.',
+        component: 'A group of toggle buttons built on Base UI, supporting single or multiple selection. Use the `multiple` prop for multi-selection. Configure `variant`, `size`, `orientation`, and `spacing` to compose toolbar-style or pill-style controls.',
       },
     },
   },
@@ -25,7 +25,7 @@ const meta = {
     },
   },
   args: {
-    type: 'multiple',
+    multiple: true,
     orientation: 'horizontal',
     variant: 'default',
   },

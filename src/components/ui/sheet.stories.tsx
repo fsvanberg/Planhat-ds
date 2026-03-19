@@ -76,7 +76,7 @@ export const Left: Story = {
           <SheetTitle>Navigation</SheetTitle>
           <SheetDescription>Browse through the sections.</SheetDescription>
         </SheetHeader>
-        <nav className="px-4 py-2 space-y-1">
+        <nav className="px-4 py-2 flex flex-col gap-1">
           <a href="#" className="block text-sm py-2 hover:text-foreground">Dashboard</a>
           <a href="#" className="block text-sm py-2 hover:text-foreground">Settings</a>
           <a href="#" className="block text-sm py-2 hover:text-foreground">Profile</a>

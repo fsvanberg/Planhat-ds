@@ -52,8 +52,8 @@ export const Default: Story = {
             <CardTitle>Account</CardTitle>
             <CardDescription>Make changes to your account here. Click save when done.</CardDescription>
           </CardHeader>
-          <CardContent className="space-y-2">
-            <div className="space-y-1">
+          <CardContent className="flex flex-col gap-2">
+            <div className="flex flex-col gap-1">
               <Label htmlFor="name">Name</Label>
               <Input id="name" defaultValue="Pedro Duarte" />
             </div>
@@ -66,8 +66,8 @@ export const Default: Story = {
             <CardTitle>Password</CardTitle>
             <CardDescription>Change your password here. After saving, you&apos;ll be logged out.</CardDescription>
           </CardHeader>
-          <CardContent className="space-y-2">
-            <div className="space-y-1">
+          <CardContent className="flex flex-col gap-2">
+            <div className="flex flex-col gap-1">
               <Label htmlFor="current">Current password</Label>
               <Input id="current" type="password" />
             </div>

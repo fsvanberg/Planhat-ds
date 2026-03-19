@@ -26,9 +26,9 @@ export const Default: Story = {
 
 export const Avatar: Story = {
   render: () => (
-    <div className="flex items-center space-x-4">
+    <div className="flex items-center gap-4">
       <Skeleton className="h-10 w-10 rounded-full" />
-      <div className="space-y-2">
+      <div className="flex flex-col gap-2">
         <Skeleton className="h-4 w-48" />
         <Skeleton className="h-4 w-36" />
       </div>
@@ -38,9 +38,9 @@ export const Avatar: Story = {
 
 export const Card: Story = {
   render: () => (
-    <div className="flex flex-col space-y-3 w-72">
+    <div className="flex flex-col gap-3 w-72">
       <Skeleton className="h-40 w-full rounded-xl" />
-      <div className="space-y-2">
+      <div className="flex flex-col gap-2">
         <Skeleton className="h-4 w-full" />
         <Skeleton className="h-4 w-4/5" />
       </div>
