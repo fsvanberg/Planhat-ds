@@ -56,7 +56,7 @@ export const WithSeparator: Story = {
     <ButtonGroup {...args}>
       <Button variant="outline">Save</Button>
       <ButtonGroupSeparator />
-      <Button variant="outline" size="icon-sm" aria-label="More options">▾</Button>
+      <Button variant="outline" size="icon" aria-label="More options">▾</Button>
     </ButtonGroup>
   ),
 }
